@@ -1,0 +1,164 @@
+* {
+    color: #F0F4EF;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A3C1A;
+    background-image: url('../images/mesmerizing-green-forest-full-different-kinds-unique-plants-yakushima-japan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 16px;
+}
+
+.container {
+    background-color: rgba(13, 26, 13, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    position: fixed;
+    border: 1px solid #A3D94E;
+    box-shadow: -10px 10px 15px #2D2926;
+}
+
+#searchContainer {
+    right: 2%;
+    bottom: 5%;
+}
+
+#timeContainer {
+    left: 2%;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#timeContainer h2, #timeContainer p {
+    padding: 0;
+    margin: 1px;
+} 
+
+#timeContainer h2 {
+    font-size: 74px;
+}
+
+#divDate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#dateFormat {
+    position: absolute;
+    font-size: 12px;
+    bottom: -70%;
+    color: #A3D94E;
+}
+
+#searchBar {
+    padding: 10px;
+    border-radius: 10px;
+    color: #F0F4EF;
+    background-color: #0D1A0D;
+    border: none;
+    border-bottom: solid;
+    border-bottom-color: #2D2926;
+    outline: none;
+    transition: all 0.4s;
+}
+
+#searchBar:focus {
+    border-bottom-color: #A3D94E;
+}
+
+#searchButton {
+    padding: 10px;
+    color: #A3D94E;
+    background-color: #4A7729;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#searchButton:hover {
+    transform: scale(110%) rotate(-10deg);
+}
+
+#noteContainer {
+    left: 2%;
+    bottom: 5%;
+    width: 280px;
+    height: 180px;
+}
+
+#notepad {
+    display: block;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background-color: rgba(13, 26, 13, 0.4);
+    border: none;
+    outline: solid #2D2926;
+    border-radius: 10px;
+    padding: 10px;
+    color: #F0F4EF;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #4A7729 transparent;
+    transition: all 0.4s;
+}
+
+#notepad:focus {
+    outline: solid #A3D94E;
+}
+
+#notepad::-webkit-scrollbar {
+    width: 6px;
+}
+
+#notepad::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#notepad::-webkit-scrollbar-thumb {
+    background-color: #4A7729;
+    border-radius: 10px;
+}
+
+#notepad::-webkit-scrollbar-thumb:hover {
+    background-color: #A3D94E;
+}
+
+@media (max-width: 600px) {
+    #searchContainer {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 2%;
+    }
+
+    #timeContainer {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5%;
+    }
+
+    #timeContainer h2 {
+        font-size: 48px;
+    }
+
+    #noteContainer {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 45%;
+        width: 90%;
+    }
+}
